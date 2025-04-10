@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST" target="_blank">
+        <h1>Payment form</h1>
+
+        <p>Required fields are followed by <abbr title="*">*</abbr></p>
+
+        <h2>Contact information</h2>
+        <label for="name">Name:<abbr title="*">*</abbr></label>
+        <input type="text" id="name" name="first_name" required><br>
+        <label for="email">E-mail:<abbr title="*">*</abbr></label>
+        <input type="email" id="email" name="email_box" required><br>
+        <label for="password">Password:<abbr title="*">*</abbr></label>
+        <input type="password" id="password" name="pass" required>
+
+        <h2>Payment information</h2>
+
+        <label for="payment">Card type:</label>
+        <select name="cards" id="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank_transfer">Bank Transfer</option>
+        </select><br>
+
+        <label for="card_number">Card number:<abbr title="*">*</abbr></label>
+        <input type="number" id="card_number" name="number_cards" required><br>
+        <label for="exp_date">Expiration date:<abbr title="*">*</abbr></label>
+        <input type="date" id="exp_date" name="date_cards" required><br>
+        <hr>
+        <p>Agree with terms and conditions <input type="checkbox"></p>
+        <input value="Validate the payment" type="submit" />
+    </form>
+</body>
+</html>
