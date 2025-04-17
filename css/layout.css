@@ -1,0 +1,60 @@
+/* before */
+header {
+    background-color: pink;
+}
+
+aside {
+    background-color: azure;
+}
+
+main {
+    background-color: limegreen;
+}
+
+footer {
+    background-color: gainsboro;
+}
+
+.container > * {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content {
+    background-color: magenta;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* after */
+
+.container {
+    width: 1200px;
+    text-align: center;
+    font-size: 0;
+}
+
+header, footer {
+    width: 100%;
+    display: inline-block;
+    font-size: initial;
+}
+
+aside, main {
+    display: inline-block;
+    font-size: initial;
+    vertical-align: top;
+}
+
+main {
+    width: 814px;
+}
+
+aside {
+    width: 300px;
+}

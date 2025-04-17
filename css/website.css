@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "nav content content calendar"
+        "nav content content ad"
+        "footer footer footer footer";
+    grid-template-columns: 1fr 4fr 4fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 0.2fr;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;    
+  }
+
+  .logo, header, .search-box, nav, main, .calendar, .ad, footer {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 0.7fr;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo, .search-box, header h1 {
+  margin: 0;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+  /* .search-box {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  nav {
+    grid-area: nav;
+  }
+
+  main {
+    grid-area: content;
+  }
+
+  .calendar {
+    grid-area: calendar;
+  }
+
+    .ad {
+        grid-area: ad;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }

@@ -1,0 +1,35 @@
+body {
+    width: 550px;
+}
+
+.chess {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.chess > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    width: 75px;
+    height: 75px;
+    border: 1px solid darkgray;
+    background-color: lightgray;
+}
+
+.chess > div:nth-child(4n+2){
+    background-color: lightblue;
+  }
+  
+.chess > div:nth-child(4n+4){
+    background-color: lightgreen;
+  }
+  
+.chess > div:nth-child(2n+16){
+   background-color: lightpink;
+  }
