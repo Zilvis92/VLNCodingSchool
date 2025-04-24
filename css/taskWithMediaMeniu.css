@@ -1,0 +1,50 @@
+nav > a {
+    padding: 0 10px;
+    border-left: 3px solid royalblue;
+    line-height: 30px;
+}
+
+nav > a:last-child {
+    border-right: 3px solid royalblue;;
+}
+
+ul {
+    list-style: none;
+    padding: 5px 5px;
+}
+
+ul > li {
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: yellow;
+    font-size: 18px;
+  }
+
+.back-button {
+background-color: #007BFF;
+color: black;
+padding: 10px 18px;
+border-radius: 8px;
+text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .main-nav-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .main-nav-mobile {
+        display: none;
+    }
+}
