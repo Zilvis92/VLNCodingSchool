@@ -78,3 +78,12 @@ for (let i =0; i < projects.length; i++) {
 }
 console.log('---------------');
 
+// 9. Susikurkite skaičių masyvą ir užpildykite duomenimis. Iš masyvo išveskite tik tuos skaičius, kurie yra didesni nei 5.
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 5) {
+        console.log(numbers[i]);
+    }
+}
+console.log('---------------');
+
