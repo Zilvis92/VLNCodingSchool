@@ -64,3 +64,94 @@ sumOutput(number1, number2);
 sumOutput(number1, number2);
 sumOutput(50, 3);
 console.log('--------------------------------------------');
+
+// 21.Susikurkite funkciją, kuri per argumentus gautų skaičių. Ji turėtų patikrinti
+// ar šis skaičius yra pirminis (grąžina true jei pirminis, ir false jei ne pirminis).
+// Už funkcijos ribų sukite ciklą nuo 2 iki 15, kiekvienoje ciklo iteracijoje
+// išveskite tikrinamą skaičių ir šalia jo iškviestos funkcijos atsakymą (pvz 10
+// false, 11 true, ...).
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+for (let i = 2; i <= 15; i++) {
+    console.log(`${i} ${isPrime(i)}`);
+}
+console.log('--------------------------------------------');
+
+// 23.Susikurkite funkciją kuri priimtų skaičių masyvą per argumentus. Ši funkcija turėtų
+// rasti duotųjų skaičių sumą ir grąžinti gautą atsakymą. Už funkcijos ribų susikurkite
+// du skaičių masyvus ir užpildykite juos duomenimis. Iškvieskite turimą funkciją du
+// kartus, jai abu kartus perduodant skirtingą masyvą. Gautus atsakymus išveskite.
+// Taip pat, raskite kuri suma gavosi didesnė ir išveskite atsakymą.
+function sumArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+let array1 = [1, 2, 3, 4, 5];
+let array2 = [6, 7, 8, 9, 10];
+console.log(`Pirmo masyvo suma: ${sumArray(array1)}`);
+console.log(`Antro masyvo suma: ${sumArray(array2)}`);
+if (sumArray(array1) > sumArray(array2)) {
+    console.log('Pirmo masyvo suma didesne');
+}
+else if (sumArray(array1) < sumArray(array2)) {
+    console.log('Antro masyvo suma didesne');
+} else {
+    console.log('Masyvai lygus');
+}
+console.log('--------------------------------------------');
+
+// 24.Susikurkite funkciją kuri per argumentus priimtų žodžių masyvą. Ji turėtų rasti ir
+// grąžinti ilgiausią žodį masyve. Už funkcijos ribų susikurkite žodžių masyvą.
+// Iškvieskite funkciją perduodant jai žodžių masyvą. Gautą atsakymą išveskite, taip
+// pat, nurodykite šio žodžio ilgį.
+function longestWord(arr) {
+    let longest = '';
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > longest.length) {
+            longest = arr[i];
+        }
+    }
+    return longest;
+}
+let words = ['labas', 'pasaulis', 'kaip', 'sekasi'];
+console.log(`Ilgiausias zodis: ${longestWord(words)}`);
+console.log(`Ilgio: ${longestWord(words).length}`);
+console.log('--------------------------------------------');
+
+// 25.Susikurkite funkciją kuri per argumentus priimtų pažymių masyvą. Ji turėtų
+// patikrinti ar visi pažymiai teigiami: jei visi teigiami turėtų grąžintų true kaip
+// atsakymą, o jei yra bent vienas neigiamas - false. Susikurkite du pažymių
+// masyvus. Iškvieskite šią funkciją du kartus, abu kartus perduodant
+// skirtingus masyvus. Gautus atsakymus paverskite į tekstą (jeigu gavote
+// true - išveskite tekstą 'visi studento pažymiai teigiami', jei false - 'studentas
+// turi bent vieną neigiamą pažymį'). Šiam iškonvertavimui iš true/false į
+// tekstą galite pamėginti pasikurti atskirą funkciją, jai perduoti kitos
+// funkcijos atsakymą.
+function allPositiveGrades(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            return false;
+        }
+    }
+    return true;
+}
+function convertToText(bool) {
+    if (bool) {
+        return 'visi studento pazymiai teigiami';
+    } else {
+        return 'studentas turi bent viena neigiamą pazymi';
+    }
+}
+let grades1 = [10, 9, 8, 7];
+let grades2 = [10, 9, -8, 7];
+console.log(convertToText(allPositiveGrades(grades1)));
+console.log(convertToText(allPositiveGrades(grades2)));
+console.log('--------------------------------------------');
