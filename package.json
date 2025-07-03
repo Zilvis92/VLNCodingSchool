@@ -1,0 +1,25 @@
+{
+  "name": "kursai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "npx @tailwindcss/cli -i ./scss/style.scss -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zilvis92/VLNCodingSchool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zilvis92/VLNCodingSchool/issues"
+  },
+  "homepage": "https://github.com/Zilvis92/VLNCodingSchool#readme",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
