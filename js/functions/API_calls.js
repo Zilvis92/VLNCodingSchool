@@ -37,7 +37,7 @@ jokeButton.addEventListener('click', async () => {
 async function fetchMovie() {
     const response = await fetch('https://api.tvmaze.com/search/shows?q=spirderman');
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     return data;
 }
 
