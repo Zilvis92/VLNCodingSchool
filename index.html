@@ -8,79 +8,99 @@
     <link rel="stylesheet" href="/public/style.css">
   </head>
 
-  <body>
-    <nav class="side-nav">
-      <ul>
-        <li><a href="task/duomenys.html">Duomenys</a></li>
-        <li><a href="task/kontaktai.html">Kontaktai</a></li>
-        <li><a href="task/paymentForm.html">Apmokėjimas</a></li>
-        <li><a href="portfolio/index.html">Portfolio</a></li>
-        <li><a href="portfolio/portfolio.html">Portfolio vidus</a></li>
-        <li><a href="task/chess.html">Chess bord</a></li>
-        <li><a href="website.html">Website</a></li>
-        <li><a href="task/taskWithMedia.html">Task with media</a></li>
-        <li><a href="task/functionsTask.html">Functions task</a></li>
-      </ul>
-    </nav>
-  
-    <div class="card">
-      <h1 title="Tai puslapio antraste" id="article">Labas pasauli!!!</h1>
-      <p class="testukas">Pirmas paragrafas</p>
-      <p>Antras paragrafas</p>
-      <p>Trecias paragrafas</p>
-      <h2>Sekanti antraste</h2>
-      <p><b><ins><em>Pirmas</em></ins></b> <i>paragrafas</i></p>
-      <p>Antras paragrafas</p>
-  
-      <h3>Tai yra antraštė</h3>
-      <p>Tai yra paragrafas.</p>
-      <div>O čia yra turinio skyrius. ......*********************</div>
-  
-      <!-- Tai Inline elementai -->
-      <span> - Inline elementas</span><br>
-      <b id="test">Bold text</b><br>
-      <strong>Important text</strong><br>
-      <i>Italic text</i> <br>
-      <em> Emphasized text</em><br>
-      <mark> - Marked text</mark><br>
-      <small> - Small text</small><br>
-      <del> - Deleted text</del><br>
-      <ins> - Inserted text</ins><br>
-      <sup> - Superscript text</sup><br>
-      <sub> - Subscript text</sub><br>
-      <br> - Naujos eilutės identifikatorius<br>
-  
-      <!-- Tai Block elementai -->
-      <div> - Turinio skyrius</div>
-      <pre> - Preformatted text</pre>
-      <code> - Code text</code>
-      <blockquote> - Citata</blockquote>
-      <address> - Adresas</address>
-      <time> - Laikas</time>
-      <time datetime="2023-10-01">2023-10-01</time><br>
-      <time datetime="2023-10-01T12:00">2023-10-01 12:00</time><br>
-      <time datetime="2023-10-01T12:00:00Z">2023-10-01 12:00 UTC</time><br>
-      <br><br><br>
-      <div>
-        <h2>Atsakymas:</h2>
-        <div>
-          <h4 id="output"></h4>
+  <body class="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 font-sans">
+    <div class="flex min-h-screen">
+      <!-- Sidebar Navigation -->
+      <nav class="w-64 bg-blue-600 text-white shadow-xl p-6 space-y-4">
+        <h2 class="text-2xl font-bold border-b border-white pb-2">Meniu</h2>
+        <ul class="space-y-2">
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="task/duomenys.html">Duomenys</a></li>
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="task/kontaktai.html">Kontaktai</a></li>
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="task/paymentForm.html">Apmokėjimas</a></li>
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="portfolio/index.html">Portfolio</a></li>
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="portfolio/portfolio.html">Portfolio vidus</a></li>
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="task/chess.html">Chess bord</a></li>
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="website.html">Website</a></li>
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="task/taskWithMedia.html">Task with media</a></li>
+          <li><a class="block hover:bg-blue-500 px-3 py-1 rounded" href="task/functionsTask.html">Functions task</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-10">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h1 class="text-4xl font-bold text-indigo-700 mb-6" id="article">👋 Labas pasauli!!!</h1>
+
+          <p class="mb-2">Pirmas paragrafas</p>
+          <p class="mb-2">Antras paragrafas</p>
+          <p class="mb-4">Trecias paragrafas</p>
+
+          <h2 class="text-2xl font-semibold text-blue-700 mt-6 mb-2">Sekanti antraste</h2>
+          <p class="mb-2">
+            <b><ins><em>Pirmas</em></ins></b> <i>paragrafas</i>
+          </p>
+          <p class="mb-4">Antras paragrafas</p>
+
+          <h3 class="text-xl font-medium text-indigo-800 mt-6 mb-2">Tai yra antraštė</h3>
+          <p class="mb-4">Tai yra paragrafas.</p>
+          <div class="bg-indigo-50 p-4 border-l-4 border-indigo-300 rounded mb-6">O čia yra turinio skyrius.</div>
+
+          <!-- Inline elements -->
+          <div class="mb-4">
+            <p class="text-sm text-gray-600 italic">Inline elementai:</p>
+            <span>Inline elementas</span><br />
+            <b id="test">Bold text</b><br />
+            <strong>Important text</strong><br />
+            <i>Italic text</i><br />
+            <em>Emphasized text</em><br />
+            <mark class="bg-yellow-300">Marked text</mark><br />
+            <small>Small text</small><br />
+            <del>Deleted text</del><br />
+            <ins>Inserted text</ins><br />
+            <sup>Superscript text</sup><br />
+            <sub>Subscript text</sub><br />
+          </div>
+
+          <!-- Block elements -->
+          <div class="mb-4">
+            <div><code>div</code> – Turinio skyrius</div>
+            <pre class="bg-gray-100 p-2 mt-2 mb-2 rounded">Preformatted text</pre>
+            <code class="bg-gray-200 px-2 py-1 rounded">Code text</code><br />
+            <blockquote class="border-l-4 border-blue-400 pl-4 italic my-2 bg-blue-50 rounded">Citata</blockquote>
+            <address class="not-italic text-gray-600">Adresas</address>
+            <time class="block text-sm text-gray-500">2023-10-01</time>
+            <time class="block text-sm text-gray-500">2023-10-01 12:00</time>
+            <time class="block text-sm text-gray-500">2023-10-01 12:00 UTC</time>
+          </div>
+
+          <!-- Atsakymas -->
+          <div class="mt-6 bg-green-100 border-l-4 border-green-400 p-4 rounded">
+            <h2 class="text-lg font-semibold text-green-800 mb-2">Atsakymas:</h2>
+            <h4 id="output" class="text-green-700 font-bold"></h4>
+          </div>
+
+          <!-- Dynamic elements -->
+          <div id="knygynas" class="mt-4"></div>
+          <div id="studentai" class="mt-4"></div>
+          <div id="didziausias-vidurkis" class="mt-4"></div>
+
+          <!-- Function outputs -->
+          <div class="mt-6">
+            <h3 class="text-lg font-semibold text-indigo-600 mb-2">Function task answer</h3>
+            <div id="function" class="mb-2"></div>
+            <div id="5time" class="mb-2"></div>
+            <div id="threeFunctions" class="mb-2"></div>
+            <div id="text" class="mb-2"></div>
+          </div>
         </div>
-      </div>
-      <div id="knygynas"></div>
-      <div id="studentai"></div>
-      <div id="didziausias-vidurkis"></div>
-      <div>
-        <h3>Function task answer</h3>
-        <div id="function"></div>
-        <div id="5time"></div>
-        <div id="threeFunctions"></div>
-        <div id="text"></div>
-      </div>
+      </main>
     </div>
+
+    <!-- JavaScript files -->
     <script src="js/pagrindai/pirmas.js" defer></script>
     <script src="js/pagrindai/object1.js" defer></script>
     <script src="js/functions/functionTask.js" defer></script>
     <script src="js/functions/dom_manipuliacijos.js" defer></script>
+    <script src="js/functions/API_calls.js" defer></script>
   </body>
 </html>
